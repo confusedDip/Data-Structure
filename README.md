@@ -22,3 +22,6 @@ structure.
 
 6. Sort the given set of elements present in three stack data structures and put
 them in a single stack, without using any other variable.
+
+Assignment 2
+____________
