@@ -25,3 +25,11 @@ them in a single stack, without using any other variable.
 
 Assignment 2
 ____________
+1. Write a C Program to implement Circular Queue in an array.
+
+2. Write a program to implement a queue using two stacks of data structure.
+
+3. Write a program to implement priority scheduling scheme using a circular 
+queue. The data elements will be the student's name, ID, CGPA, Departments, and 
+Semester. In priority scheduling higher priority elements selected first. 
+Here the CGPA will be considered as the priority of students
