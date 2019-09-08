@@ -1,5 +1,7 @@
 # Data-Structure
 3rd Semester DS Assignments
+Batch: Hx
+Prof: Dr. Indrajeet Biswas
 
 Assignment 1
 ____________
