@@ -3,7 +3,7 @@
 
 Batch: Hx
 
-Prof: Dr. Indrajeet Biswas\n
+Prof: Dr. Indrajeet Biswas
 
 Assignment 1
 ____________
