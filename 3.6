@@ -61,16 +61,24 @@ void del()
         struct node* current=head;
         printf("The data deleted: %d\n",current->data);
         if(current->next==head)
+        {
+        	printf("\t\tTEST\n");
             head=NULL;
+        }
         else{
         head=current->next;
-        current=head;
-        while(current->next!=head)
-            current=current->next;
-        current->next=head;
-        struct node* last = current;
-        current=head;
-        current->prev=last;}
+     
+        struct node* ptr=head;
+        while(ptr->next!=current)
+            ptr=ptr->next;
+      	ptr->next=head;
+        struct node* last = ptr;
+        ptr=head;
+        ptr->prev=last;
+        free(current);
+        }
+        
+        
     }
 }
 void display()
