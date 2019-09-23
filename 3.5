@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include<string.h>
+#include <string.h>
 
 struct node
 {
@@ -8,6 +8,33 @@ struct node
     struct node* next;
 };
 struct node* head=NULL;
+
+void del(int data)
+{
+	struct node *prev, *current;
+    current=head;
+    prev=head;
+    if(current->data==data)
+    {
+    	head=current->next;
+    }
+    else
+    {
+    	current=current->next;
+    	while(current!=NULL)
+    	{
+        	if(current->data==data)
+        	    break;
+        	else
+        	{
+            	prev=current;
+            	current=current->next;
+        	}
+        }
+        prev->next=current->next;
+    }
+    free(current);
+}
 
 void append(int data)
 {
@@ -69,22 +96,42 @@ void display()
     }
     printf("NULL\n");
 }
+
+void distinct()
+{
+	struct node* curr=head;
+	while(curr->next!=NULL)
+	{
+		if(curr->data == curr->next->data)
+		{
+			del(curr->data);	
+			curr=head;
+		}
+		else
+			curr=curr->next;
+	}
+}
+		
+
 int main(int argc , char *argv[])
 {
-    int i=0,num=0;
+    int i=0,j=0,num=0;
     char s[100];
-    printf("Enter your numbers:\n");
-    gets(s);
     printf("The numbers before sorting: \n");
-    puts(s);
-    while(i<strlen(s))
+    for(i=1;i<argc;i++)
+    	printf("%s ",argv[i]);
+    printf("\n");
+    for(j=1;j<argc;j++)
     {
-        if(s[i]>='0' && s[i]<='9')
+    	i=0;
+    	while(i<strlen(argv[j]))
+  		{
+        if(argv[j][i]>='0' && argv[j][i]<='9')
             {
                 num=0;
-                while(s[i]!=' ' && i<strlen(s))
+                while(argv[j][i]!=' ' && i<strlen(argv[j]))
                 {
-                    num=num*10+(s[i]-'0');
+                    num=num*10+(argv[j][i]-'0');
                     i++;
                 }
                 if(head==NULL)
@@ -111,9 +158,9 @@ int main(int argc , char *argv[])
 
                 }
             }
-            else if(s[i]== ' ')
-                i++;
+    	}
     }
+    distinct();
     printf("The List after sorting:\n");
     display();
 }
