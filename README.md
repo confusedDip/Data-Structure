@@ -37,3 +37,36 @@ ____________
 queue. The data elements will be the student's name, ID, CGPA, Departments, and 
 Semester. In priority scheduling higher priority elements selected first. 
 Here the CGPA will be considered as the priority of students
+
+Assignment 3
+____________
+
+1. Design a program to simulate “Movie-Maker”. It must have the following functionalities: - >Allow the users to add images to the slide show.
+
+>Allow the users to delete any image from the list.
+
+>Allow the users to start the slide show. There must be a comfortable time gap between two consecutive images.
+
+(The path of individual images are stored in a singly circular linked list. The slide show can start from any slide.)
+
+2. Design a program to simulate a “Photo-Viewer” having the following features: - >The path of the images are stored in a doubly circular linked list.
+
+>Allow the users to add an image at the current location.
+
+>Allow the user to delete an image at the current location.
+
+>Allow the user to navigate the images using any two buttons of his/her/ choice denoting the actions-previous and next.
+
+(The pathnames used in the linked list may also be stored in a file for later use.)
+
+3. Write a program to count the number of elements in a circular link list. Write another function which will search and delete an element from the above circular linked list.
+
+
+4. Write a program to evaluate a postfix and prefix expression using a stack data structure. Your program has to consider two or three-digit numbers (eg. 112 34 5 * + ) Implement the stack using Linked List ADT.
+
+
+5. Write a program which will take elements from the console and store them in a single linked list in sorted order. The linked list must not contain any duplicate element.
+
+6. Write a program to implement queue ADT using the doubly circular link list.
+
+7. Write a program to add two polynomial equation where the data are supposed to store in a doubly-linked list
