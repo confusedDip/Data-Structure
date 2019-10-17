@@ -70,3 +70,37 @@ ____________
 6. Write a program to implement queue ADT using the doubly circular link list.
 
 7. Write a program to add two polynomial equation where the data are supposed to store in a doubly-linked list
+
+Assignment 4
+------------
+
+1. Write a program to implement insertion and deletion of node in a binary search tree. Write a function
+to implement in-order, pre-order and post-order traversal of binary search tree using recursion.
+
+2. Write a program to implement BST using three array (data, left address, right address). Also write
+an in-order traversal of this binary search tree using stack.
+
+3. Write a C Program to implement the Max Heap and then delete all the elements from the tree so the
+deleted elements are in sorted order.
+
+4. Write a C program to implements Huffman Coding
+I. Build a Huffman Tree from input characters. (Ask user about the characters and their number of
+appearance)
+II. Traverse the Huffman Tree and assign codes to characters.
+
+5. Implement a ternary tree where each node may contain two key value in sorted form. Each node
+may have maximum three children. Data insertion rule for the tree is as search tree i.e. data in leftmost
+child is less than the data of first key. Data in middle child is greater that the first key but less than
+second key. Data in third child is greater than the data in second key.
+
+6. Given a Binary Tree where each node has following structure, write a function to populate next
+pointer for all nodes. The next pointer for every node should be set to point to inorder successor.
+
+7. Write a program to convert a given in-order expression to pre-order and post-order form using
+Expression tree.
+struct node
+{
+int data;
+struct node* left;
+struct node* right;
+struct node* next;
