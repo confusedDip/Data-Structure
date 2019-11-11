@@ -37,6 +37,24 @@ void display(struct node* h)
         printf("%d",h->data);
     }
 }
+
+int search(struct node* h, int data)
+{
+	if(h==NULL)
+		return -1;
+	else
+	{
+		while(h!=NULL)
+		{
+			if(h->data==data)
+				return 1;
+			else
+				h=h->next;
+		}
+		if(h==NULL)
+			return -1;
+	}
+}	
 int main()
 {
     struct node* list[10];
@@ -60,4 +78,12 @@ int main()
         display(list[i]);
         printf("\n");
     }
+    printf("Enter the target you want to search: ");
+    scanf("%d",&target);
+    d=target%10;
+    int check=search(list[d],target);
+    if(check == -1)
+    	printf("Element not found!\n");
+    else
+    	printf("Element found!\n");
 }
